@@ -1,0 +1,30 @@
+
+state={
+	id=57
+	name="STATE_57"
+
+	history={
+		owner = TCI
+		victory_points = { 1357 5 }
+		buildings = {
+			infrastructure = 6
+			1357 = {
+				naval_base = 2
+			}
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		303 1357 3509 4123 5598 5617 5637 
+	}
+	manpower=1240000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,42 @@
+Harmony Empire - Harmony High Priests Military
+	HHPAF = Harmony High Priests Air Force
+	 HHPM = Harmony High Priests Military
+	 HHPN = Harmony High Priests Navy (Main)
+	FTHPN = Federation of Tiers High Priests Navy (BTF)
+	LPHPN = Lower Peninsulan High Priests Navy (LPA)
+
+Techno Republic - Technoctatic State Military
+	 TSDF = Technoctatic Self-Defense Force
+	  TSM = Technoctatic State Military
+	 TNDU = Technoctatic Naval Defense Units
+
+	@1810 = -1	# 	@1918 = -1
+	@1822 = 2	# 	@1934 = 2
+	@1824 = 5	# 	@1936 = 5
+	@1826 = 8	# 	@1938 = 8
+	@1827 = 11	# 	@1939 = 11
+	@1828 = 14	# 	@1940 = 14
+	@1829 = 17	# 	@1941 = 17
+	@1830 = 20	# 	@1942 = 20
+	@1831 = 23	# 	@1943 = 23
+	@1832 = 26	# 	@1944 = 26
+	@1833 = 29	# 	@1945 = 29
+	@1834 = 32	# 	@1946 = 32
+	@1835 = 35	# 	@1947 = 35
+	@1836 = 38	# 	@1948 = 38
+	@1837 = 41	# 	@1949 = 41
+	@1838 = 44	# 	@1950 = 44
+	@1839 = 47	# 	@1951 = 47
+	@1840 = 50	# 	@1952 = 50
+	@1841 = 53	# 	@1953 = 53
+	@1842 = 56	# 	@1954 = 56
+	@1843 = 59	# 	@1955 = 59
+	@1844 = 62	# 	@1956 = 62
+	@1845 = 65	# 	@1957 = 65
+	@1846 = 68	# 	@1958 = 68
+	@1847 = 71	# 	@1959 = 71
+	@1848 = 74	# 	@1960 = 74
+	@1849 = 77	# 	@1961 = 77
+	@1850 = 80	# 	@1962 = 80
+	@1851 = 83	# 	@1963 = 83
+	@1852 = 86	# 	@1964 = 86

@@ -1,0 +1,35 @@
+state={
+	id=273
+	name="STATE_273"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = megalopolis_notoiagi_ii
+	history={
+		owner = FFN
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 50
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = FFN
+	}
+	provinces={
+		469 1233 2460 2861 3048 7203 7228 7257 7288 7303 7323 7336 7337 7371 7377 11119 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+}

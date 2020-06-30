@@ -1,0 +1,35 @@
+
+state={
+	id=349
+	name="STATE_349"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
+		grain=0.000
+	}
+
+	history={
+		owner = VNA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = VNA
+
+	}
+
+	provinces={
+		42 796 817 2894 3683 5778 5789 5805 5866 5885 5892 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

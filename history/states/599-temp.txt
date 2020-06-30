@@ -1,0 +1,35 @@
+state={
+	id=599
+	name="STATE_599"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=16
+	}
+	state_category = rural
+	history={
+		owner = TST
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TST
+	}
+	provinces={
+		4 1329 2017 2613 3504 3514 5967 6002 6043 6085 6088 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+}

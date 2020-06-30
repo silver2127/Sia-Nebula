@@ -1,0 +1,29 @@
+state={
+	id=417
+	name="STATE_417"
+	state_category=city
+	resources={
+		chromium=50
+	}
+	history={
+		owner = SES
+		victory_points = { 3077 10 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			3077 = {
+				naval_base = 4
+			}
+			industrial_complex = 0
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = SES
+	}
+	provinces={
+		2014 2123 3077 3465 6266 6267 6310 
+	}
+	manpower=1257000
+	buildings_max_level_factor=1.000
+}

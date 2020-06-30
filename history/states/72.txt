@@ -1,0 +1,30 @@
+
+state={
+	id=72
+	name="STATE_72"
+	resources={
+		grain=18
+	}
+	history={
+		owner = TCI
+		victory_points = { 886 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			synthetic_refinery = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		886 1032 1368 6072 6102 6115 6143 6184 
+	}
+	manpower=125750
+	buildings_max_level_factor=1.000
+	state_category=town
+}

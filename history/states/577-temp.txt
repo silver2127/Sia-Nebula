@@ -1,0 +1,35 @@
+
+state={
+	id=577
+	name="STATE_577"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
+		grain=0.000
+	}
+
+	history={
+		owner = TST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TST
+
+	}
+
+	provinces={
+		217 2278 3339 5403 5416 5448 5479 5495 5538 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

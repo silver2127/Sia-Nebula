@@ -1,0 +1,142 @@
+ideas = {
+	role_of_women_laws = { 
+		law = yes
+
+		stay_at_home = {
+
+			cost = 100
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				monthly_population = 0.1
+			}
+			
+			ai_will_do = {
+				base = 1
+			}
+
+			cancel_if_invalid = no
+
+			default = yes
+		}
+		women_workers = {
+			cost = 200
+			removal_cost = -1
+			level = 3
+
+			available = {
+				OR = {
+					and = {
+						has_war = yes
+						has_government = authoritarianism
+					}
+					and = {
+						has_war = yes
+						has_government = theocracy
+						enemies_strength_ratio > 2.0
+					}
+					has_government = enlightenism
+					has_government = technocracy
+					has_government = unityism
+				}
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.25
+			}
+
+			cancel_if_invalid = no
+		}
+		women_auxillary = {
+
+			cost = 200
+			removal_cost = -1
+			level = 3
+
+			available = {
+				NOT = { has_government = theocracy }
+				OR = {
+					has_war = yes
+					has_government = unityism
+				}
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+			modifier = {
+				conscription = 0.005
+				supply_consumption_factor = -0.05
+				political_power_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+		}
+		limited_female_service = {
+	
+			cost = 200
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				NOT = { has_government = theocracy }
+				AND = {
+					has_war = yes
+				}
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+			modifier = {
+				conscription = 0.01
+				political_power_factor = -0.1
+			}
+
+			cancel_if_invalid = no
+		}
+		egalitarian = {
+
+			cost = 200
+			removal_cost = -1
+			level = 1
+
+			available = {
+				NOT = { has_government = theocracy }
+				OR = {
+					AND = {
+						has_war = yes
+						has_government = unityism
+					}
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 2.0
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1
+			}
+
+			modifier = {
+				conscription = 0.075
+				political_power_factor = -0.2
+				training_time_factor = 0.2
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

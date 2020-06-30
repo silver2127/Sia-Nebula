@@ -1,0 +1,234 @@
+﻿division_template = {
+	name = "Infantry Division"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tank Division"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Colonial Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 0
+}
+	### Mainland Infantry
+units = {
+	division = {
+		location = 5648
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2340
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5558
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5546
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5506
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5547
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5533
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 988
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 724
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2267
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5820
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 724
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2267
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5750
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3520
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3958
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 409
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5497
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 5330
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2622
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 1275
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2611
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2611
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3115
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+}
+	### Colonial Guard
+units = {
+	division = {
+		location = 1262
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2253
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 1791
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2203
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 2575
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 1460
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4431
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4452
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4437
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4510
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4498
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 4431
+		division_template = "Colonial Guard"
+		start_experience_factor = 0.1
+	}
+}

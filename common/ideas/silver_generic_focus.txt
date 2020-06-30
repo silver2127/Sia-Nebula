@@ -1,0 +1,213 @@
+ideas = {
+	country = {
+		mysterious_boon_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+	
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.15
+				
+			}
+		}
+		logistic_effort = {
+
+			picture = generic_agrarian_society
+			modifier = {
+				supply_consumption_factor = -0.30
+				consumer_goods_factor = 0.05
+			}
+		}
+		a_grave_mistake = {
+
+			picture = generic_research_bonus
+			modifier = {
+				political_power_cost = 1.5
+			}
+		}
+		Ending_the_Order = {
+
+			picture = generic_research_bonus
+			modifier = {
+				justify_war_goal_time = -1
+			}
+		}
+		Burning_Nest = {
+
+			picture = generic_research_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		An_unusual_boon ={
+			modifier ={
+				army_attack_factor = 0.1            
+			}
+		}
+		Bulwark_of_Liberty = {
+			modifier={
+				war_support_factor = 0.2
+			}
+		}
+		New_Ideas = {
+			modifier={
+				research_speed_factor = 0.15
+			}
+		}
+
+
+		Forced_Learning_focus = {
+
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.20
+				
+			}
+		}
+		hidden_truth_focus = {
+			
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				
+			}
+			
+		}
+		Occult_Libraries = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+
+				
+			}
+		}
+		Democratic_Crusade = {
+			modifier = {
+				justify_war_goal_time = -2
+			}
+			
+		}
+		All_Seeing_Eye = {
+			picture = generic_spy_political
+			modifier = {
+				decryption_factor = 0.03
+				operative_slot = 2
+			}
+		}
+		Will_of_the_Workers_focus = {
+			picture = idea_generic_communist_army
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+		Power_of_the_Proletariat_focus = {
+			picture = idea_political_correctness
+			modifier = {
+				industrial_capacity_factory = 0.1 
+			}
+		}
+		Educated_Elite_focus = {
+		picture = idea_generic_communist_army
+		
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+		Gifts_from_the_machine = {
+			research_bonus = {
+				armor = 0.30
+			}
+			modifier={
+				production_factory_max_efficiency_factor = 0.1 
+			}
+		}
+		Rediscovered_Ancient_Texts = {
+			modifier = {
+				stability_weekly = 0.01
+				theocracy_drift = 0.1
+			}
+		}
+		Faithful_Populace = {
+			modifier = {
+				war_support_weekly = 0.01
+			}
+		}
+		generic_theocracy = {
+			modifier = {
+				justify_war_goal_time = -0.15
+				theocracy_drift = 0.1
+			}
+		}
+		technocratic_rebirth = {
+			modifier = {
+				justify_war_goal_time = -0.15
+				technocracy_drift = 0.1
+			}
+		}
+		five_year_plan = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.30
+				local_resources_factor = 0.10
+			}
+		}
+		freedom_of_speech = {
+			modifier = {
+				research_speed_factor = 0.05
+			}}
+			
+		Will_of_the_Nation ={
+				modifier={
+					war_support_factor = 0.5
+				}
+			}
+		
+		Spread_The_Revolutions = {
+			modifier ={
+				enemy_justify_war_goal_time = -0.1 
+				unityist_acceptance = 85 
+				send_volunteer_size = 5
+
+			}
+		}
+		industrial_preparation_focus = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		One_Nation_Undivded_focus = {
+			picture = mex_politicised_army_2
+			modifier = {
+				stability_factor = 0.20
+			}
+		}
+		A_Great_Army_focus = {
+			picture = warrior_traditions_idea
+			modifier = {
+				army_attack_factor = 0.10
+				conscription = 0.05
+			}
+		}
+		Defensive_Strategems_focus = {
+			modifier = {
+				defensive_war_stability_factor = 0.20
+			}
+		}
+		Gifts_of_the_Mind = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

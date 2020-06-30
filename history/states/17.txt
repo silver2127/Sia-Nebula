@@ -1,0 +1,30 @@
+
+state={
+	id=17
+	name="STATE_17"
+	resources={
+		steel=48
+	}
+	history={
+		owner = SES
+		victory_points = { 144 5 }
+		victory_points = { 3250 5 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+
+	}
+
+	provinces={
+		144 914 3250 3348 6198 6236 
+	}
+	manpower=631500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

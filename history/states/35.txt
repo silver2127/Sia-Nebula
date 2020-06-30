@@ -1,0 +1,36 @@
+state={
+	id=35
+	name="STATE_35"
+	state_category = large_town
+	resources={
+		aluminium=32
+		tungsten=32
+		steel=32
+		chromium=16
+	}
+	history={
+		owner = USA
+		victory_points = { 2611 20 }
+		victory_points = { 3115 8 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			2611 = {
+				naval_base = 8
+			}
+			3115 = {
+				naval_base = 4
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = USA
+	}
+	provinces={
+		682 2611 3115 4036 4085 4878 4902 4915 4932 
+	}
+	manpower=9750500
+	buildings_max_level_factor=1.000
+}

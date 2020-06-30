@@ -1,0 +1,37 @@
+
+state={
+	id=554
+	name="STATE_554"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = city
+	history={
+		owner = IVR
+		victory_points = { 5975 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			5975 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = IVR
+		add_core_of = TST
+	}
+	provinces={
+		399 1062 1777 5905 5942 5975 6045 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+}

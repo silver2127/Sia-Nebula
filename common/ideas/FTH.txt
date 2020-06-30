@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		FTH_Idea = {
+
+			allowed = {
+				original_tag = FTH
+			}
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -999
+				attrition = -999
+				ai_focus_defense_factor = -99.9
+				ai_focus_aggressive_factor = 99.9
+				army_attack_factor = 1.0
+			}
+		}
+	}
+}

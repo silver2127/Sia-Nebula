@@ -1,0 +1,7 @@
+state_categories = {
+	megalopolis_notoiagi_ii = {
+		local_building_slots = 50
+
+			color = { 50 10 250 }
+	}
+}

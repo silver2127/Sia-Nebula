@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		SES_spark_of_freedom = {
+			picture = SES_spark_of_freedom
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ai_focus_defense_factor = 0.3
+				army_core_defence_factor = 0.05
+				drift_defence_factor = 0.2
+				enlightenism_drift = 0.02
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+}

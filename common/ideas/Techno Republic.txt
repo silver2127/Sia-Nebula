@@ -1,0 +1,103 @@
+ideas = {
+	country = {
+		silicon_city = {
+			picture = TTR_silicon_city
+
+			allowed = {
+				original_tag = TTR
+			}
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+				trade_opinion_factor = 0.25
+			}
+		}
+	}
+	tank_manufacturer = {
+		techno_peninsula_tank_manufacturer = {
+			picture = TTR_peninsula_tank
+
+			allowed = {
+				original_tag = TTR
+			}
+			available = {
+				#aways = yes
+			}
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			traits = { techno_peninsula_tank_manufacturer }
+			cost = 150
+			
+			ai_will_do = {
+   				base = 2
+   				modifier = {
+					factor = 10
+					is_major = yes
+				}
+   			}
+		}
+	}
+	naval_manufacturer = {
+		silicon_city_naval_manufacturer = {
+			picture = TTR_silicon_city_naval
+
+			allowed = {
+				original_tag = TTR
+			}
+			available = {
+				#aways = yes
+			}
+			research_bonus = {
+				naval_equipment = 0.2
+			}
+			
+			traits = { silicon_city_naval_manufacturer }
+			cost = 150
+			
+			ai_will_do = {
+   				base = 2
+   				modifier = {
+					factor = 10
+					is_major = yes
+				}
+   			}
+		}
+	}
+	aircraft_manufacturer = {
+		techcracia_aircraft_manufacturer = {
+			picture = TTR_silicon_city_naval
+
+			allowed = {
+				original_tag = TTR
+			}
+			available = {
+				#aways = yes
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { techcracia_aircraft_manufacturer }
+			cost = 150
+			
+			ai_will_do = {
+   				base = 2
+   				modifier = {
+					factor = 10
+					is_major = yes
+				}
+   			}
+		}
+	}
+}

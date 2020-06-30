@@ -1,0 +1,26 @@
+state={
+	id=169
+	name="STATE_169"
+	state_category = rural
+	history={
+		owner = USA
+		victory_points = { 4455 1 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			4455 = {
+				naval_base = 3
+			}
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = USA
+	}
+	provinces={
+		2146 4438 4455 
+	}
+	manpower=15750
+	buildings_max_level_factor=1.000
+}

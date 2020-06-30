@@ -1,0 +1,168 @@
+HHE_influence_game = {
+	HHE_imperal_improvement = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_subject_of = HHE
+			}
+			#FROM = {
+			#	democratic < 0.9
+			#}
+			OR = {
+				political_power_daily > 1.0
+				has_political_power > 160
+			}
+		}
+
+		visible = {
+			not = {
+				is_subject_of = HHE
+			}
+			or = {
+				has_government = enlightenism
+				has_government = theocracy
+				has_government = authoritarianism
+			}
+			FROM = {
+				is_subject_of = HHE
+				#or = {
+				#	enlightenism < 0.99
+				#	theocracy < 0.99
+				#	authoritarianism < 0.99
+				#}
+			}
+		}
+
+		#target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = HHE
+			}
+		}
+
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = harmony_imperal_improvement days = 120 } }
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+request_development = {
+	request_development_help = {
+
+		available = {
+			is_subject_of = HHE
+		}
+
+		visible = {
+			is_subject_of = HHE
+		}
+
+		fire_only_once = no
+		is_good = yes
+		cost = 50
+
+		days_remove = 120
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				has_political_power > 175
+			}
+			modifier = {
+				factor = -1
+				has_political_power < 150
+			}
+		}
+
+		modifier = {
+		}
+
+		complete_effect = {
+			HHE = {
+				country_event = { id = HHE_subject.0 days = 1 }
+			}
+		}
+	}
+}
+
+fire_meme = {
+	BLOOD_FOR_THE_BLOOD_GOD = {
+
+		available = {
+			tag = HHE
+		}
+
+		visible = {
+			tag = HHE
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		days_remove = 99999
+
+		ai_will_do = {
+			base = 0
+		}
+
+		modifier = {
+			research_speed_factor = 2
+			conscription_factor = 5
+			surrender_limit = 5
+			supply_consumption_factor = -100
+			local_factories = 1
+			local_non_core_manpower = 1
+			local_resources = 1
+			mobilization_speed = 999
+			training_time_army_factor = -1
+			subjects_autonomy_gain = -999
+			send_volunteer_factor = 999
+			industrial_capacity_factory = 10
+			industrial_capacity_dockyard = 10
+			global_building_slots_factor = 99
+			production_speed_buildings_factor = 99
+			political_power_factor = 5
+			consumer_goods_factor = -1
+			experience_gain_army = 100
+			experience_gain_navy = 100
+			experience_gain_air = 100
+			encryption_factor = 99
+		}
+
+		complete_effect = {
+			set_technology = { vast_offensives = 1 }
+			set_technology = { human_wave_offensive = 1 }
+			set_technology = { non_mainstream_studies = 1 }
+			set_technology = { armored_car6 = 1 }
+			set_technology = { amphibious_mechanized_infantry_3 = 1 }
+			set_technology = { mechanised_infantry7 = 1 }
+			set_technology = { infantry_equipment_5 = 1 }
+			set_technology = { super_heavy_tank_1945 = 1 }
+			set_technology = { super_heavy_1945_td = 1 }
+			set_technology = { super_heavy_1945_art = 1 }
+			set_technology = { super_heavy_1945_spaa = 1 }
+			set_technology = { atomic_research = 1 }
+			set_technology = { nuclear_reactor = 1 }
+			set_technology = { nukes = 1 }
+			set_research_slots = 20
+			remove_ideas = free_trade
+			remove_ideas = export_focus
+			remove_ideas = limited_exports
+			add_ideas = closed_economy
+		}
+	}
+}

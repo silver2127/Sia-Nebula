@@ -1,0 +1,526 @@
+﻿division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Defense Garrison Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+	#Main Infantry Division
+units = {
+	division = {
+		location = 3119
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 6163
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5657
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5681
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 2874
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 4089
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 2719
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5909
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 6106
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 587
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 2380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 1396
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 6163
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 3119
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 2066
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5745
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5875
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 5599
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 1984
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 3531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 3077
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 3465
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 50
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		location = 4138
+		division_template = "Infantry Division"
+		start_experience_factor = 0.30
+	}
+}
+	#20 Spam Defense
+units = (
+	division = {
+		location = 3465
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6267
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1734
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3455
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6218
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1396
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6106
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2380
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 587
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5930
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5909
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5870
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2719
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5581
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1387
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1984
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5599
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 139
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5681
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6139
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6163
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 606
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6163
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2467
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2527
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5991
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3119
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3119
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3119
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2409
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 4089
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3266
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5727
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5827
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5681
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 139
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6051
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 29
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5969
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5935
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 50
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 50
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1414
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1414
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5028
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3784
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3784
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3784
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3250
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 144
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 1569
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3642
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 4850
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 4893
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 4940
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6068
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 5991
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2527
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 2467
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3531
+		division_template = "Defense Garrison Division"
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+}

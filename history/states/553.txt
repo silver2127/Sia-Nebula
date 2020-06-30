@@ -1,0 +1,36 @@
+state={
+	id=553
+	name="STATE_553"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = city
+	history={
+		owner = NTA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = NTA
+		add_core_of = TST
+	}
+	provinces={
+		3621 6235 6292 6323 6329 6356 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+}

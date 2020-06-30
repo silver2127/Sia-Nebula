@@ -1,0 +1,33 @@
+political_actions = {
+
+	remove_shackles = {
+		
+		icon = generic_construction
+		
+		allowed = {
+			always = yes
+		}
+		
+		cost = 1
+		fire_only_once = yes
+		
+		available = {
+			OR = {
+			has_idea = uninterested
+			has_idea = unindustrialized
+			}
+		}
+		
+		
+		complete_effect = {
+			add_ideas = {
+			civilian_economy
+			volunteer_only
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+		}
+	}
+}

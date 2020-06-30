@@ -1,0 +1,35 @@
+state={
+	id=639
+	name="STATE_639"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = town
+	history={
+		owner = PDA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = PDA
+	}
+	provinces={
+		423 1015 2016 6380 6383 6445 6448 6488 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+}

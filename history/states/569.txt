@@ -1,0 +1,36 @@
+
+state={
+	id=569
+	name="STATE_569"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=86.000
+		chromium=0.000
+		grain=0.000
+	}
+
+	history={
+		owner = HHE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HHE
+
+	}
+
+	provinces={
+		1084 1712 2464 3447 4668 4678 4695 4743 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+	impassable = yes
+}

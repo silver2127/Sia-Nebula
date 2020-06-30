@@ -1,0 +1,185 @@
+spriteTypes = {	
+
+	### generic equipment archetypes ###
+	
+			SpriteType = {
+		name = "GFX_archetype_light_tank_1943_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1943.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_archetype_light_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1945.dds"
+	}	
+		SpriteType = {
+		name = "GFX_archetype_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/medium_tank_1945.dds"
+	}	
+		SpriteType = {
+		name = "GFX_archetype_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/heavy_tank_1945.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_archetype_super_heavy_tank_1943"
+		texturefile = "gfx/interface/technologies/superheavy_tank.dds"
+	}	
+	
+	
+				
+	
+	
+	SpriteType = {
+		name = "GFX_light_tank_1943_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_tank.dds"
+	}
+	
+	
+		SpriteType = {
+		name = "GFX_light_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_tank.dds"
+	}	
+		SpriteType = {
+		name = "GFX_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
+	}	
+		SpriteType = {
+		name = "GFX_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/advanced_heavy_tank.dds"
+	}	
+	#######
+	SpriteType = {
+		name = "GFX_super_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/super_heavy_tank3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_super_heavy_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/super_heavy_tank1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_super_heavy_1941_tank_medium"
+		texturefile = "gfx/interface/technologies/super_heavy_tank2.dds"
+	}
+
+		SpriteType = {
+		name = "GFX_early_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/basic_medium_tank.dds"
+	}
+
+	#FRA
+	SpriteType = {
+		name = "GFX_FRA_early_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_tank_d2.dds"
+	}
+
+	#SOV
+	SpriteType = {
+		name = "GFX_SOV_early_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_tank_t28.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_early_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_spat_generic_medium.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_early_medium_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_spg_generic_medium.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_early_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV_spaa_generic_light.dds"
+	}
+
+	
+	
+########################
+			
+		####Sov###
+	
+		SpriteType = {
+		name = "GFX_SOV_light_tank_1943_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_1943.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_SOV_super_heavy_1941_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_super_heavy_1941_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_super_heavy_tank.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_SOV_light_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_light_tank.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_SOV_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_1945.dds"
+	}
+	
+				SpriteType = {
+		name = "GFX_SOV_super_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_super_heavy_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/SOV_super_heavy_tank_1934.dds"
+	}
+					####Fra###
+	
+		SpriteType = {
+		name = "GFX_FRA_light_tank_1943_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_light_tank.dds"
+	}
+
+		SpriteType = {
+		name = "GFX_FRA_super_heavy_tank_1934_medium"
+		texturefile = "gfx/interface/technologies/FRA_super_heavy_tank_1934.dds"
+	}
+	
+	
+	
+		SpriteType = {
+		name = "GFX_FRA_light_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_light_tank.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_FRA_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/FRA_main_battle_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/FRA_adv_heavy_tank.dds"
+	}
+	
+				SpriteType = {
+		name = "GFX_FRA_super_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/FRA_superheavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_tank_1945.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_super_heavy_1941_tank_medium"
+		texturefile = "gfx/interface/technologies/FRA_superheavy_tank.dds"
+	}		
+
+
+}

@@ -1,0 +1,5 @@
+the_tests = {
+	visible = {
+		original_tag = TTR
+	}
+}

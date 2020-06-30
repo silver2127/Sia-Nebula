@@ -1,0 +1,35 @@
+
+state={
+	id=607
+	name="STATE_607"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
+		grain=0.000
+	}
+
+	history={
+		owner = TST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TST
+
+	}
+
+	provinces={
+		156 422 1603 3248 4106 5640 5693 5694 5700 5714 5716 5731 5746 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

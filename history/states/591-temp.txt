@@ -1,0 +1,35 @@
+
+state={
+	id=591
+	name="STATE_591"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
+		grain=0.000
+	}
+
+	history={
+		owner = TST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TST
+
+	}
+
+	provinces={
+		2381 2979 3060 3877 5873 5894 5904 5908 5941 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

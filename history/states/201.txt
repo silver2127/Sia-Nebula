@@ -1,0 +1,36 @@
+state={
+	id=201
+	name="STATE_201"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = megalopolis_notoiagi_i
+	history={
+		owner = NUI
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 35
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = NUI
+		add_core_of = FFN
+	}
+	provinces={
+		2362 7466 7486 7487 7518 7525 7529 7826 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+}

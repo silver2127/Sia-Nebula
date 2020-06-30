@@ -1,0 +1,27 @@
+
+state={
+	id=613
+	name="STATE_613"
+	state_category = town
+	history={
+		owner = NRF
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = NRF
+	}
+	provinces={
+		459 1059 1177 1915 2731 3694 4030 4592 4608 4696 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

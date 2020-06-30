@@ -1,0 +1,744 @@
+﻿##This file is for miscellaneous things, like government reform
+add_namespace = swp_government
+add_namespace = swp_government_hidden
+
+##GOVERNMENT CHANGE; ACTIVATED WITH flag
+##swp_government.2 = democracy
+##swp_government.3 = theocracy
+##swp_government.4 = unityism
+
+
+##first HIDDEN event to determine if crisis or not
+country_event = {
+
+    id = swp_government_hidden.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government_hidden.1" }
+
+	hidden = yes
+	
+	trigger = {
+		has_idea = SWP_government
+		is_major = no
+		NOT = { has_country_flag = country_in_crisis }
+		has_global_flag = swp_government_settings
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {	
+		set_country_flag = country_in_crisis
+		
+	}
+	
+	option = {
+	
+	
+		if = {
+			limit = {
+				has_government = authoritarianism
+			}
+			swap_ideas = { remove_idea = SWP_government add_idea = SWP_government_n } 
+		}
+		
+		if = {
+			limit = {
+				has_government = enlightenism
+			}
+			swap_ideas = { remove_idea = SWP_government add_idea = SWP_government_d } 
+		}
+		
+		if = {
+			limit = {
+				has_government = unityism
+			}
+			swap_ideas = { remove_idea = SWP_government add_idea = SWP_government_c } 
+		}
+		
+		if = {
+			limit = {
+				has_government = theocracy
+			}
+			swap_ideas = { remove_idea = SWP_government add_idea = SWP_government_f } 
+		}
+	
+	
+		hidden_effect = {
+			random_list = {
+				##crisis
+				50 = {
+					country_event = { days = 30 id = swp_government_hidden.2  }
+				}
+				##no crisis
+				50 = {					
+					add_political_power = 1					
+				}			
+			}
+		}
+	}
+	
+}
+
+
+
+##HIDDEN event to trigger different outcomes
+country_event = {
+
+    id = swp_government_hidden.2                   
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government_hidden.2" }
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	
+	#unityism -> theocracy or democracy
+	option = {
+	
+		trigger = {		
+		has_government = unityism		
+		}
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = { days = 1 id = swp_government.2 }
+				}			
+				50 = {					
+					country_event = { days = 1 id = swp_government.3 }					
+				}			
+			}
+		}
+
+	}
+	#authoritarianism -> unityism, theocracy, democracy
+	option = {
+	
+		trigger = {		
+		has_government = authoritarianism		
+		}
+		
+		hidden_effect = {
+			random_list = { 
+				33 = {
+					country_event = { days = 1 id = swp_government.2 }
+				}			
+				34 = {					
+					country_event = { days = 1 id = swp_government.3 }					
+				}
+				33 = {					
+					country_event = { days = 1 id = swp_government.4 }					
+				}
+			}
+		}
+
+	
+	}
+	#theocracy -> unityism or democracy
+	option = {
+	
+		trigger = {		
+		has_government = theocracy		
+		}
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = { days = 1 id = swp_government.3 }
+				}			
+				50 = {					
+					country_event = { days = 1 id = swp_government.4 }					
+				}			
+			}
+		}
+
+	}
+	##enlightenism -> theocracy, unityism
+	option = {
+	
+		trigger = {		
+		has_government = enlightenism		
+		}
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = { days = 1 id = swp_government.3 }
+				}			
+				50 = {					
+					country_event = { days = 1 id = swp_government.4 }					
+				}			
+			}
+		}
+
+	}
+			
+}
+
+
+
+##This event deletes all flags and spirits
+country_event = {
+
+    id = swp_government_hidden.3                
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government_hidden.3" }
+	
+	hidden = yes	
+	is_triggered_only = yes
+	
+	option = {
+	
+		hidden_effect = {
+
+			##Delete flags
+			##national spirit stuff
+			if = {
+					limit = {
+						has_idea = SWP_government
+					}
+					remove_ideas = SWP_government
+				}
+				
+			if = {
+					limit = {
+						has_idea = SWP_government_d
+					}
+					remove_ideas = SWP_government_d
+				}
+				
+			if = {
+					limit = {
+						has_idea = SWP_government_n
+					}
+					remove_ideas = SWP_government_n
+				}
+				
+			if = {
+					limit = {
+						has_idea = SWP_government_c
+					}
+					remove_ideas = SWP_government_c
+				}
+				
+			if = {
+					limit = {
+						has_idea = SWP_government_f
+					}
+					remove_ideas = SWP_government_f
+				}
+			
+			##flags
+			if = {
+					limit = {
+						has_country_flag = country_in_crisis
+					}
+					clr_country_flag = country_in_crisis
+				}
+				
+			if = {
+					limit = {
+						has_country_flag = swp_unityism
+					}
+					clr_country_flag = swp_unityism
+				}
+				
+			if = {
+					limit = {
+						has_country_flag = swp_theocracy
+					}
+					clr_country_flag = swp_theocracy
+				}
+				
+			if = {
+					limit = {
+						has_country_flag = swp_enlightenism
+					}
+					clr_country_flag = swp_enlightenism ##shorten this to one sentence
+				}			
+		}	
+	}
+}
+
+
+
+
+##Ideology events
+##democracy
+country_event = {
+
+    id = swp_government.2                   
+	title = swp_government.2.t                 
+    desc = swp_government.2.d                   
+	picture = GFX_report_event_soviet_purge_speech
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government.2" }	
+		
+	is_triggered_only = yes
+
+	immediate = {	
+		set_country_flag = swp_enlightenism	
+	}
+
+	option = {
+		name = swp_government.2.a
+		ai_chance = { factor = 50 }
+	
+		add_political_power = 50
+		add_popularity = { ideology = enlightenism popularity = 0.5 } 
+		set_politics = { ruling_party = enlightenism elections_allowed = yes }
+
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+		
+	}
+	
+	option = {
+		name = swp_government.2.b
+		ai_chance = { factor = 50 }
+	
+			add_political_power = -30
+			add_popularity = { ideology = enlightenism popularity = 0.1 }
+		
+			random_list = {
+			
+				60 = {
+					##civil war
+					country_event = { days = 1 id = swp_government.5 }
+				}			
+				40 = {
+					##nothing
+					country_event = { days = 1 id = swp_government.6 }					
+				}			
+			}
+	}			
+}
+
+##Ideology events
+##theocracy
+country_event = {
+
+    id = swp_government.3                   
+	title = swp_government.3.t                 
+    desc = swp_government.3.d                   
+	picture = GFX_report_event_soviet_purge_speech
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government.3" }	
+		
+	is_triggered_only = yes
+
+	immediate = {	
+		set_country_flag = swp_theocracy	
+	}
+	
+	option = {
+		name = swp_government.3.a
+		ai_chance = { factor = 50 }
+	
+		add_political_power = 50
+		add_popularity = { ideology = theocracy popularity = 0.5 } 
+		set_politics = { ruling_party = theocracy elections_allowed = no } 
+		
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+	
+	}
+	
+	option = {
+		name = swp_government.3.b
+		ai_chance = { factor = 50 }
+	
+		add_political_power = -30
+		add_popularity = { ideology = theocracy popularity = 0.1 }
+	
+		random_list = {
+				90 = {
+					##civil war
+					country_event = { days = 1 id = swp_government.5 }
+				}			
+				10 = {
+					##nothing
+					country_event = { days = 1 id = swp_government.6 }					
+				}			
+			}
+	}
+			
+}
+
+
+##Ideology events
+##unityism
+country_event = {
+
+    id = swp_government.4                   
+	title = swp_government.4.t                 
+    desc = swp_government.4.d                   
+	picture = GFX_report_event_soviet_purge_speech
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government.4" }	
+		
+	is_triggered_only = yes
+	
+	immediate = {	
+		set_country_flag = swp_unityism	
+	}
+
+	option = {
+		name = swp_government.4.a
+		ai_chance = { factor = 50 }
+	
+		add_political_power = 50
+		add_popularity = { ideology = unityism popularity = 0.5 } 
+		set_politics = { ruling_party = unityism elections_allowed = yes }
+
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+
+	}
+	
+	option = {
+		name = swp_government.4.b
+		ai_chance = { factor = 50 }
+	
+		add_political_power = -30
+		add_popularity = { ideology = unityism popularity = 0.1 }
+		
+	
+		random_list = {
+				50 = {
+					##civil war
+					country_event = { days = 1 id = swp_government.5 }
+				}			
+				50 = {
+					##nothing
+					country_event = { days = 1 id = swp_government.6 }					
+				}			
+			}
+
+	
+	}
+			
+}
+
+
+##Civil War!
+country_event = {
+
+    id = swp_government.5 
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government.5" }	
+	
+		title = {
+			text = swp_government.5.td
+			trigger = {
+				has_country_flag = swp_enlightenism }
+			}
+		title = {
+			text = swp_government.5.tf
+			trigger = {
+				has_country_flag = swp_theocracy }
+			}
+		title = {
+			text = swp_government.5.tc
+			trigger = {
+				has_country_flag = swp_unityism }
+			}
+		desc = {
+			text = swp_government.5.dd
+			trigger = {
+				has_country_flag = swp_enlightenism }
+			}
+		desc = {
+			text = swp_government.5.df
+			trigger = {
+				has_country_flag = swp_theocracy }
+			}
+		desc = {
+			text = swp_government.5.dc
+			trigger = {
+				has_country_flag = swp_unityism }
+			}
+		
+	picture = GFX_report_event_germany_politician_handshake
+		
+	is_triggered_only = yes
+
+	##shit
+	option = {
+		name = swp_government.5.ad
+	
+		trigger = {		
+		has_country_flag = swp_enlightenism		
+		}
+	
+		add_political_power = -50
+		
+		start_civil_war = {
+			ideology = enlightenism
+			size = 0.5
+		}
+		
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+	
+	}
+	
+	##shit
+	option = {
+		name = swp_government.5.af
+	
+		trigger = {		
+		has_country_flag = swp_theocracy		
+		}
+	
+		add_political_power = -50
+		start_civil_war = {
+			ideology = theocracy
+			size = 0.5
+		}
+		
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+
+	
+	}
+	
+	##shit
+	option = {
+		name = swp_government.5.ac
+	
+		trigger = {		
+		has_country_flag = swp_unityism		
+		}
+	
+		add_political_power = -50   
+						
+		start_civil_war = {
+			ideology = unityism
+			size = 0.5
+		}
+		
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+
+	}
+	
+	
+	##JOIN THE REBELS
+	
+	##democracy
+	option = {
+		name = swp_government.5.bd
+	
+		trigger = {		
+			has_country_flag = swp_enlightenism		
+		}
+	
+		if = {
+			limit = {	   
+			   has_government = authoritarianism
+			   
+			}
+			
+			start_civil_war = {
+				ideology = authoritarianism
+				ruling_party = enlightenism
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+				country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+		
+		if = {
+			limit = {	   
+			   has_government = unityism
+			   
+			}
+			
+			start_civil_war = {
+				ideology = unityism
+				ruling_party = enlightenism
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+				country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+		
+		if = {
+			limit = {	   
+			   has_government = theocracy
+			   
+			}
+			
+			start_civil_war = {
+				ideology = theocracy
+				ruling_party = enlightenism
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+
+	}
+	
+	##fascists rise to power
+	option = {
+		name = swp_government.5.bf
+	
+		trigger = {		
+			has_country_flag = swp_theocracy		
+		}
+		
+		if = {
+			limit = {	   
+			   has_government = authoritarianism
+			   
+			}
+			
+			start_civil_war = {
+				ideology = authoritarianism
+				ruling_party = theocracy
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+				country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+		
+		##democracy
+		if = {
+			limit = {	   
+			   has_government = enlightenism
+			   
+			}
+			
+			start_civil_war = {
+				ideology = enlightenism
+				ruling_party = theocracy
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+				country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+		
+		#unityismo
+		if = {
+			limit = {	   
+			   has_government = unityism
+			   
+			}
+			
+			start_civil_war = {
+				ideology = unityism
+				ruling_party = theocracy
+				size = 0.5
+			}
+			
+			hidden_effect = {		
+				country_event = { days = 1 id = swp_government_hidden.3 }		
+			}
+		}
+
+	
+	}
+
+	##glorious revolution
+	option = {
+		name = swp_government.5.bc
+	
+		trigger = {		
+			has_country_flag = swp_unityism		
+		}
+
+		if = {
+		    limit = {	   
+			   has_government = authoritarianism
+			   
+				}				
+				start_civil_war = {
+					ideology = authoritarianism
+					ruling_party = unityism
+					size = 0.5
+				}
+				
+				hidden_effect = {		
+					country_event = { days = 1 id = swp_government_hidden.3 }		
+				}
+		}
+		
+		if = {
+		   limit = {	   
+			   has_government = enlightenism
+			   
+				}				
+			   start_civil_war = {
+					ideology = enlightenism
+					ruling_party = unityism
+					size = 0.5
+			    }
+				
+				hidden_effect = {		
+					country_event = { days = 1 id = swp_government_hidden.3 }		
+				}
+		}
+		
+		if = {
+		   limit = {	   
+			   has_government = theocracy
+			   
+				}				
+			   start_civil_war = {
+					ideology = theocracy
+					ruling_party = unityism
+					size = 0.5
+			    }
+				
+				hidden_effect = {		
+					country_event = { days = 1 id = swp_government_hidden.3 }		
+				}
+		}
+
+	}
+		
+}	
+
+
+
+
+country_event = {		##Civil War averted, country is held together
+
+    id = swp_government.6                 
+	title = swp_government.6.t 
+    desc = swp_government.6.d
+	picture = GFX_report_event_germany_politician_handshake
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_government.6" }	
+		
+	is_triggered_only = yes
+
+	##GOOD
+	option = {
+		name = swp_government.6.a
+
+		add_political_power = 10
+		add_stability = 0.02
+		add_manpower = -10000
+
+		hidden_effect = {		
+			country_event = { days = 1 id = swp_government_hidden.3 }		
+		}
+
+	}
+	
+}
+
